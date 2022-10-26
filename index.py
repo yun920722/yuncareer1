@@ -13,22 +13,8 @@ def index():
     return homepage
 
 @app.route("/me")
-def course():
+def route():
     return render_template("me.html")
-
-@app.route("/today")
-def today():
-    now = datetime.now()
-    return render_template("today.html", datetime = str(now))
-
-@app.route("/welcome", methods=["GET", "POST"])
-def welcome():
-    user = request.values.get("nick")
-    return render_template("welcome.html", name=user)
-
-@app.route("/about")
-def about():
-    return render_template("aboutme.html")
 
 #if __name__ == "__main__":
 #    app.run()
