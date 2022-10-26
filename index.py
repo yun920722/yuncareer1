@@ -16,13 +16,13 @@ def index():
 def route():
     return render_template("me.html")
 @app.route("/mis")
-def route():
+def mis():
     return render_template("mis.html")
 @app.route("/career")
-def route():
+def career():
     return render_template("career.html")
 @app.route("/me1")
-def route():
+def me1():
     return render_template("me1.html")
 
 #if __name__ == "__main__":
